@@ -1,0 +1,46 @@
+LoRa ILP Computational Experiment - Reproducibility Report
+================================================================
+
+System / execution environment
+- timestamp_utc: 2026-05-02 03:03:55 UTC
+- os: Linux-4.4.0-x86_64-with-glibc2.41
+- python_version: 3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]
+- processor: unknown
+- physical_cores: 56
+- logical_cores: 56
+- memory_total_gb: 4.0
+- scipy_version: 1.17.0
+- milp_solver: scipy.optimize.milp using HiGHS backend
+- matplotlib_version: 3.10.8
+- numpy_version: 2.3.5
+- pandas_version: 2.2.3
+
+Primary experiment settings
+- N: 100
+- SF set: [7, 8, 9, 10, 11, 12]
+- Bandwidth: 125 kHz
+- Payload distribution: 70% 8-20 bytes, 25% 21-40 bytes, 5% 41-51 bytes
+- Window W: 3600.0 s
+- Per-device duty-cycle budget: 36.0 s
+- Dwell/channel-occupancy screen: 4.0 s
+- Gateway grouped downlink budget: 36.0 s
+- Grouped control payload H0: 12 bytes
+- Capacity/load-management slots by SF: {'SF7': 22, 'SF8': 22, 'SF9': 19, 'SF10': 16, 'SF11': 12, 'SF12': 10}
+
+Primary results
+- Greedy complete assignment: True
+- Greedy total planned uplink ToA: 41.025536 s
+- ILP total planned uplink ToA: 30.253568 s
+- ILP improvement over greedy: 26.26%
+- ILP solve time: 0.066680 s
+- ILP variables: 606
+- ILP constraints: 813
+- ILP solver message: Optimization terminated successfully. (HiGHS Status 7: Optimal)
+
+Scaling summary
+  N  success  status                                                         message  objective_s  solve_time_seconds  num_variables  num_constraints
+ 25     True       0 Optimization terminated successfully. (HiGHS Status 7: Optimal)     6.810624            0.004306            156              213
+ 50     True       0 Optimization terminated successfully. (HiGHS Status 7: Optimal)    14.887936            0.007823            306              413
+100     True       0 Optimization terminated successfully. (HiGHS Status 7: Optimal)    30.233344            0.012900            606              813
+200     True       0 Optimization terminated successfully. (HiGHS Status 7: Optimal)    58.982400            0.036433           1206             1613
+500     True       0 Optimization terminated successfully. (HiGHS Status 7: Optimal)   155.224064            0.107448           3006             4013

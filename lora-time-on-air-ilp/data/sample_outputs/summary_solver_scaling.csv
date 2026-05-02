@@ -1,0 +1,6 @@
+N,success,status,message,objective_s,solve_time_seconds,num_variables,num_constraints
+25,True,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),6.810624,0.004305810999994719,156,213
+50,True,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),14.887936,0.007823349000091184,306,413
+100,True,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),30.233344,0.012900135000109003,606,813
+200,True,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),58.9824,0.036432701000194356,1206,1613
+500,True,0,Optimization terminated successfully. (HiGHS Status 7: Optimal),155.224064,0.10744784899998194,3006,4013
