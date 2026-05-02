@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated paper or repository."
+title: "LoRa Time-on-Air ILP Optimization Experiments"
+authors:
+  - family-names: "Sekharan"
+    given-names: "Chandra N."
+  - family-names: "Dominguez"
+    given-names: "Ruben"
+year: 2026
+license: MIT
+repository-code: "https://github.com/csekharan/lora-time-on-air-ilp"
+keywords:
+  - LoRa
+  - LoRaWAN
+  - time-on-air
+  - integer linear programming
+  - wireless networks
+  - optimization
