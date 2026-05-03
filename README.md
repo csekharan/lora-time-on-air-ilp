@@ -5,7 +5,7 @@ This repository contains Python code for simulating and solving a LoRa-class gat
 The code supports the paper draft:
 
 > **Modeling and Optimizing Time-On-Air and Energy Usage in LoRa-Class Networks**  
-> Chandra N. Sekharan and Ruben Dominguez
+> Chandra N. Sekharan, Ruben Dominguez, Jose Baca
 
 ## Overview
 
